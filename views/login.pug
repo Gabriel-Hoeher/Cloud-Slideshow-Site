@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css")
+        link(rel="stylesheet", href="styles/home.css", content="application/css; charset=utf-8")
+        link(rel="stylesheet", href="styles/animation.css", content="application/css; charset=utf-8")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
+        script(language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js")
+        title Login 
+    
+body 
+    div(class="hero is-large login-hero")
+        div(class="hero-body login-hero-body has-text-centered")
+            h1(class="title is-1")='Login To Access Gallery'
+        div(class="hero-foot")
+            div(class="container has-text-centered")
+                h2(class="title")=`Enter Renata's last name?`
+                form(action="/", method="GET")
+                    div(class="columns is-gapless")
+                        p(class="control has-icons-left column")
+                            input(name="login", type="password", class="input is-large")
+                            span(class="icon is-left")
+                                i(class="fas fa-lock")
+                        p(class="control has-icons-left column is-narrow")
+                            input(type="submit", class="button is-large", value="Submit")
